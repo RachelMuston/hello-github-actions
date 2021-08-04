@@ -19,7 +19,7 @@ jobs:
       - name: Link Snitch
         uses: victoriadrake/link-snitch@v1.0.0
         id: broke
-      - if: steps.broke.outputs.broken == 0
+      - if: steps.broke.outputs.broken != 0
         run: |
-         echo You have zero broken links!
+         echo You have broken links!
 
