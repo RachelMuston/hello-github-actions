@@ -1,7 +1,7 @@
 name: a workflow to check for broken links in the MA website every 10 mins
 on:
   schedule:
-    - cron: '30 * * * *'
+    - cron: '10 * * * *'
 
 env:
   URL: https://micro-acquisition.alpha.canada.ca
