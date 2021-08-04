@@ -17,9 +17,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Link Snitch
-        id: broke
         uses: victoriadrake/link-snitch@v1.0.0
-        run: echo ::set-output name=broken::value
+        id: broke
       - if: steps.broke.outputs.broken == 0
-        name: Create an issue
         uses: JasonEtco/create-an-issue@v2.4.0
